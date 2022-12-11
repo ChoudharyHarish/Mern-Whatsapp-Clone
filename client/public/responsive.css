@@ -1,0 +1,30 @@
+*{
+    /* background-color: black; */
+}
+.sideBar{
+    width:40% !important;
+}
+
+.chat_header .icons {
+    width: 25% !important;
+}
+
+@media only  screen and (max-width:620px){
+        .sideBar{
+        width: 100% !important;
+        }
+        .chat{
+            /* border: 3px solid; */
+            display: none !important;
+        }
+        .show{
+            display: flex !important;
+            width: 100% !important;
+        }
+        .hidePreview{
+            display: none !important;
+        }
+        /* .hidePreview{
+            display: none;
+        } */
+}

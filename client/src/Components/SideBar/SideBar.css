@@ -1,0 +1,54 @@
+.sideBar{
+    width: 25%;
+    height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px, rgba(0, 0, 0, 0.22) 0px 0px 12px;
+    overflow: scroll;
+}
+.sideBar_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 0.5rem;
+    background-color: rgb(240, 240, 240);
+    border-right: 1px solid rgb(153, 152, 152);
+}
+.avatar{
+    padding: 0.5rem;
+}
+.icons{
+    display: flex;
+    padding: 0.5rem;
+    justify-content:space-between;
+    width: 50%;
+}
+
+.sideBar_search{
+    display : flex;
+    padding: 0.5rem 1rem;
+}
+.sideBar_search input{
+    border:none;
+    outline: none;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    background-color:rgb(240, 240, 240);
+}
+
+.sideBar_chats{
+    padding: 0.5rem 1rem;
+}
+.sideBar_chats h2{
+    border-bottom: 1px solid #dadbd3;
+    text-transform:capitalize;
+    letter-spacing: 0.4px;
+}
+.sideBar_preview{
+    display : flex;
+    align-items: center;
+    cursor: pointer;
+    flex-grow: 4;
+}
+.sideBar_chat{
+    margin-left: 1rem;
+}
