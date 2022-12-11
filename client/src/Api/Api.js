@@ -1,6 +1,7 @@
 import axios from 'axios'
 
-const url = "http://localhost:5000/api";
+// const url = "http://localhost:5000/api";
+const url = "https://mern-whatsapp-clone.vercel.app/api";
 
 const signUp = (form) => axios.post(`${url}/auth/signup`, form);
 const signIn = (form) => axios.post(`${url}/auth/signIn`, form);
