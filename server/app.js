@@ -13,6 +13,11 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json({ limit: '60mb', extended: true }));
 
+
+app.get("/", (req, res) => {
+    res.json({ "message": "Build Succeded" })
+})
+
 app.use("/api/auth", authRouter);
 app.use("/api/chats", authMiddleWare, messageRouter);
 
@@ -61,4 +66,4 @@ const start = async () => {
 
 start();
 
-// module.exports = { server };
+module.exports = app;
