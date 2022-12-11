@@ -1,11 +1,11 @@
 require("dotenv").config()
 const connectDB = require("./db/connection")
+const cors = require("cors");
 const express = require("express")
 const authMiddleWare = require("./middleware/authMiddleWare");
 const authRouter = require('./routes/auth')
 const messageRouter = require("./routes/message");
 const bodyParser = require('body-parser')
-const cors = require("cors");
 const { addUser, getUser, removeUser, users } = require("./socket/index");
 
 const app = express();
@@ -31,7 +31,8 @@ const start = async () => {
         console.log('Here')
         const io = require('socket.io')(server, {
             cors: {
-                origin: ['https://mern-whatsapp-clone-h38r.vercel.app']
+                origin: ['http://mern-whatsapp-clone-h38r.vercel.app/']
+                // origin: ['http://localhost:3000']
             }
         });
         io.on('connection', (socket) => {
