@@ -1,9 +1,9 @@
 {
-   "name": "Mern-Whatsapp-Clone",
+   "name": "mern-whatsapp-clone",
     "version": "1.0.0",
     "description": "",
     "scripts": {
-        "build": "client/build",
+        "build": "echo \"No build specified\" && exit 1",
         "test": "echo \"No test specified\" && exit 1",        
         "start": "node index.js"
     },
