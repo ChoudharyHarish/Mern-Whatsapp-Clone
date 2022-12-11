@@ -17,7 +17,7 @@ import EmojiPicker from 'emoji-picker-react';
 import { io } from 'socket.io-client';
 import image from "./emptyBg.webp"
 
-const socket = io('https://mern-whatsapp-clone.vercel.app');
+const socket = io('https://mern-whatsapp-clone.vercel.app/');
 socket.on('connect', () => {
     console.log(`You connected with id ${socket.id}`)
 })
