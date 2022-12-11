@@ -30,6 +30,7 @@ const start = async () => {
         })
         console.log('Here')
         const io = require('socket.io')(server, {
+            pingTimeout: 60000,
             cors: {
                 origin: ['http://mern-whatsapp-clone-h38r.vercel.app/']
                 // origin: ['http://localhost:3000']
